@@ -1,0 +1,13 @@
+{
+    "name": "Android-Java-Dev",
+    "image": "mcr.microsoft.com/devcontainers/java:17",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["vscjava.vscode-java-pack"]
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/setup-sdk.sh"
+}
